@@ -7,7 +7,9 @@
 
 Acceptance Criteria
 GIVEN a fun geo weather app that allows users to find rainbows locally
-WHEN I click on the rainbow on the homepage
+WHEN I hover my mouse over the rainbow on the homepage
+THEN I see details of how to use the Rainbow Chaser App
+WHEN I click the rainbow on the homepage
 THEN I am taken to a maps page displaying my current location
 WHEN I view my current location
 THEN I can see a background image showing my current weather
