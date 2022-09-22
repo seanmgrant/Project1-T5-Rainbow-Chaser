@@ -5,7 +5,7 @@
 
 
 
-Acceptence Criteria
+Acceptance Criteria
 GIVEN a fun geo weather app that allows users to find rainbows locally
 WHEN I click on the rainbow on the homepage
 THEN I am taken to a maps page displaying my current location
