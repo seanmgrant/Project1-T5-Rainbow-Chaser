@@ -1,1 +1,65 @@
 
+<<<<<<< HEAD
+=======
+
+
+body {
+    background-image: url("https://i.pinimg.com/564x/a5/b6/02/a5b602fc9befcc14a51ccdd2f64ce062.jpg");
+    
+    padding: 10%;
+    margin: 10%;
+    border: solid 10% red;
+}
+
+h1 {
+    font: 'Nabla';
+    font-family: 'Nabla', 'cursive';
+    size: 20rem;
+    
+}
+
+#rainbowBtn {
+    align-items: bottom;
+    border-radius: 20%;
+    height: 4rem;
+    width: 4rem;        
+    
+    position: absolute;
+    bottom: 3%;
+    left: 5%;
+    transform: scaleX(-1);        
+}
+
+#rainbowBtn:hover {    
+    border: solid 3px #E3B505;  
+    cursor: pointer; 
+    background: linear-gradient(to right, #14ffe9, #ffeb3b, #ff00e0);
+    animation: animate 1.5s linear infinite;
+}
+
+#weatherImage {
+    height: 300px;
+    width: 80%;
+    margin-right: auto;
+    margin-left: auto;
+    display: none;
+}
+
+
+
+#buttonContainer {
+    display: block;
+    align-items: center;
+    align-content: center;
+    display: table-cell;
+    vertical-align: bottom;
+
+}
+
+@keyframes animate {
+    100% {
+        filter: hue-rotate(360deg);
+    }
+}
+
+>>>>>>> 4ffa5c9e8e0fccf9efaf9dbe0f9e367b487876a9
