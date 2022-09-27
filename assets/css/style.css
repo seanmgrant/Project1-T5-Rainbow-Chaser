@@ -50,7 +50,7 @@ h1 {
     align-items: center;
     align-content: center;
     display: table-cell;
-    vertical-align: bottom;
+    /* vertical-align: bottom; */
 
 }
 
