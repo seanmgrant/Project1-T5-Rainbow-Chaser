@@ -1,5 +1,29 @@
 var apiKeyMapBox = "pk.eyJ1IjoibW1vY2t1czE1IiwiYSI6ImNsOGc2Nnh4cTBlbTUzdm5obHNtMnNuamMifQ.AZXXr5kGKaQPJ9wbx6oIWQ"
+const mainButton = document.querySelector("#rainbowBtn");
 
+
+mainButton.addEventListener("click", ()=>{
+    alert("This button works!!");
+    console.log("this button works")
+});
+
+// // this will choose and return an image based on current weather conditions which will be passed as argument to function
+// function currentWeather(display) {
+//     switch {
+//         case 'rainy':            
+
+//         case 'cloudy':
+
+//         case 'sunny':
+
+//         case 'windy':
+
+//         case 'lightning':
+
+//         default:  
+               
+//     }
+// }
 
 
 
