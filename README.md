@@ -1,7 +1,7 @@
 ## Rainbow-Chaser
 
 ## Description
-A tracker app made fun! Keep track of rainbows in your area, while finding and pinning them to a rainbow playlist.
+A tracker app made fun! Keep track of rainbows in your area, while finding and pinning them to a map with a custom playlist.
 
 
 
