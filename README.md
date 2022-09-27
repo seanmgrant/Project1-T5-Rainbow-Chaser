@@ -1,7 +1,7 @@
 ## Rainbow-Chaser
 
 ## Description
-A maker app made fun! Keep track of rainbows in your area, finding and pinning them. 
+A marker app made fun! Keep track of rainbows in your area, finding and pinning them. 
 
 
 
