@@ -9,6 +9,8 @@ mainButton.addEventListener("click", () => {
   console.log("this button works");
 });
 
+
+
 // // this will choose and return an image based on current weather conditions which will be passed as argument to function
 // function currentWeather(display) {
 //     switch {
