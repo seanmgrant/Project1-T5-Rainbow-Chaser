@@ -48,27 +48,6 @@ function fetchMapBoxMap() {
 function fetchWeather() {}
 
 const geolocate = new mapboxgl.GeolocateControl({
-<<<<<<< HEAD
-	positionOptions: {
-	enableHighAccuracy: true
-	},
-	trackUserLocation: true
-	});
-	// Add the control to the map.
-	map.addControl(geolocate);
-	// Set an event listener that fires
-	// when a geolocate event occurs.
-	geolocate.on('geolocate', () => {
-	console.log('A geolocate event has occurred.');
-	});
-
-
-function chooseImage() {
-
-
-
-}
-=======
   positionOptions: {
     enableHighAccuracy: true,
   },
@@ -87,4 +66,3 @@ geolocate.on("geolocate", () => {
 
 
 
->>>>>>> 559e944920eca97495d9f011b853ba3070fa01bb

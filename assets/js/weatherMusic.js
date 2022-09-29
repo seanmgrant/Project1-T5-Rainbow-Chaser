@@ -1,18 +1,12 @@
-var CLIENTID = "Eq8KSecb2Yz4Lq--EUjuGWH_8OifHCRwdwHr1ztKdLx5Qk_zCZG--AXPSQzMXhL-";
-var CLIENTSECRET = "-3Ynmxt9BZab3Qs5sbr_GdzGxXoGqSqbSISFuEQwquYeVm-5-A3nFIcgUOvDSY731GT-hhJtvTK5jYDccT7juQ";
-var accessToken= "?access_token=CXyFeSBw2lAdG41xkuU3LS6a_nwyxwwCz2dCkUohw-rw0C49x2HqP__6_4is5RPx";
-var API = "https://api.genius.com/search";
+var CLIENTID = "yl9kE00201CanbnUZ459WfIu__BwgYur3KhDHfM12B7n0ztlRAlG-XkDMdisCDvc";
+var CLIENTSECRET = "9zw7du1Xkpw55F7L1uoZaYnaTLkmL9IgqC8L5nW9XUooOtd8JbSy3AtJ70CV3z4upXFS15t2_8um6def8iUHjQ";
+var accessToken= "?access_token=ZCPupfL9NToUnxJxrfLyHz2_kisz6QEKCes6-XxoEmn8SWZvRmau4LtsbAsh-JOw";
+var apiUrl = "https://api.genius.com/search";
 var APISong = "https://api.genius.com/songs/";
-var artistID = "2262627";
+var artistID = "395176";
 var maxSong= 2471960; 
 //Max song is 489579 for a fairly safe number. But 2 million songs 
 
-imgArray = [
-	"chool-rainbow.webp",
-	"circle-rainbow.jpeg",
-	"double-rainbow-mountains.jpeg",
-	"rainbow-btn-2.jpeg",
-]
 
 /**
  * Returns a random integer between min (inclusive) and max (inclusive)
@@ -27,12 +21,12 @@ xhr.onreadystatechange = function() {
 	if (xhr.readyState === 4) {
 		if (xhr.status === 200 || xhr.status === 304) {
 			// Success! Do stuff with data.
-			//console.log(xhr.responseText); 
+			console.log(xhr.responseText); 
 		}
 	}
 };
 xhr.open("GET", APISong+artistID+accessToken, false);
-//xhr.open("GET", API+accessToken+ '&q=Kendrick%20Lamar', false);
+//xhr.open("GET", apiUrl+accessToken+ '&q=Kendrick%20Lamar', false);
 
 xhr.send(); 
 //console.log(xhr.status);
@@ -82,18 +76,32 @@ function tweetSong(){
 
 
 
+// rainbow button returns to homepage
+document.getElementById("rainbowTitleBtn").onclick = function () {
+	location.href = "index.html";
+}
 
 
 
-	// NOT WORKING- needs more- needs image sizing
-	function randomRainbowImg(){
-		randomIndex = Math.floor(Math.random() * imgArray.length);
-		selectedImg = imgArray[randomIndex]
-		document.getElementById("imgBtnContainer")
-	}
+
+// NOT WORKING- rainbow image array needs to show on page with random button click
+imgArray = [
+	"chool-rainbow.webp",
+	"circle-rainbow.jpeg",
+	"double-rainbow-mountains.jpeg",
+	"rainbow-btn-2.jpeg",
+]
+function randomRainbowImg(imgArray){
+	randomIndex = Math.floor(Math.random() * imgArray.length);
+	selectedImg = imgArray[randomIndex]
+	return selectedImg;
+}
+var rainbowButton = document.getElementById('imgButtonEl');
+
+rainbowButton.addEventListener("click", randomRainbowImg(imgArray) 
+)
 	
-	// rainbow button returns to homepage
-	document.getElementById("rainbowTitleBtn").onclick = function () {
-		location.href = "index.html";
-	}
+
+
+		
 
