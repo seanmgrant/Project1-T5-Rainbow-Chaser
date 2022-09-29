@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- music style sheet -->
+	<link href="https://fonts.googleapis.com/css?family=Hammersmith+One" rel="stylesheet">
+	<!-- bulma style sheet -->
+	<!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css"> -->
+	<!-- css style sheet -->
+<link rel="stylesheet" href="./assets/css/weatherMusic.css">
+	<title>Current Weather/Music</title>
+</head>
+
+
+<body>
+		<div class="columns" >
+		  <button class="rainbowTitle column" id="rainbowTitleBtn">RAINBOW CHASER</button>
+		  <div class="column">
+			<h3>RAINBOW SONG GENERATOR</h3><br>
+		  </div>
+		  <div class="column">
+			<div class="column" id="songImage"></div>
+			<div class="column">
+			  <p id="song"></p>
+			  <p id="artist"></p>
+			  <button class="button" onclick="newRandomSong()"><span>RKS SONG</span></button>
+			  <br>
+			   <button class="button tweet" onclick="tweetSong()"><span>TWEET abt it <i class="fas fa-twitter"></i></span></button>
+			</div>
+		  </div>
+		</div>
+
+		<!-- random rainbow image generator -->
+		<div id= "imgContainer">
+			<div id= "innerImgContainer">
+			<img id="randomRainbowImg"/>
+			</div>
+			<div id="imgBtnContainer">
+				<button onclick="randomRainbowImg()">Click for rainbow image generator<i class="fas fa-random"></i></button>
+			</div>
+		</div>
+		
+		
+
+
+
+	<script src="./assets/js/weatherMusic.js"> </script>
+</body>
+</html>
