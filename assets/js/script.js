@@ -3,10 +3,18 @@
 var apiKeyMapBox =
   "pk.eyJ1IjoibW1vY2t1czE1IiwiYSI6ImNsOGc2Nnh4cTBlbTUzdm5obHNtMnNuamMifQ.AZXXr5kGKaQPJ9wbx6oIWQ";
 const mainButton = document.querySelector("#rainbowBtn");
+const rainy = "raining-grass.jpeg";
+// const cloudy = 
+// const sunny = 
+// const thunder = 
+// const snow = 
+// const tornado = 
+
 
 mainButton.addEventListener("click", () => {
   alert("This button works!!");
   console.log("this button works");
+
 });
 
 
@@ -16,7 +24,7 @@ mainButton.addEventListener("click", () => {
 //     switch {
 //         case 'rainy':
 
-//         case 'cloudy':
+//         case 'cloudy'			
 
 //         case 'sunny':
 
@@ -40,6 +48,27 @@ function fetchMapBoxMap() {
 function fetchWeather() {}
 
 const geolocate = new mapboxgl.GeolocateControl({
+<<<<<<< HEAD
+	positionOptions: {
+	enableHighAccuracy: true
+	},
+	trackUserLocation: true
+	});
+	// Add the control to the map.
+	map.addControl(geolocate);
+	// Set an event listener that fires
+	// when a geolocate event occurs.
+	geolocate.on('geolocate', () => {
+	console.log('A geolocate event has occurred.');
+	});
+
+
+function chooseImage() {
+
+
+
+}
+=======
   positionOptions: {
     enableHighAccuracy: true,
   },
@@ -58,3 +87,4 @@ geolocate.on("geolocate", () => {
 
 
 
+>>>>>>> 559e944920eca97495d9f011b853ba3070fa01bb
