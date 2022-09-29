@@ -3,7 +3,7 @@ var CLIENTSECRET = "-3Ynmxt9BZab3Qs5sbr_GdzGxXoGqSqbSISFuEQwquYeVm-5-A3nFIcgUOvD
 var accessToken= "?access_token=CXyFeSBw2lAdG41xkuU3LS6a_nwyxwwCz2dCkUohw-rw0C49x2HqP__6_4is5RPx";
 var API = "https://api.genius.com/search";
 var APISong = "https://api.genius.com/songs/";
-var artistID = "2471960";
+var artistID = "2262627";
 var maxSong= 2471960; 
 //Max song is 489579 for a fairly safe number. But 2 million songs 
 
