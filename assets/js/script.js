@@ -45,6 +45,7 @@ function fetchMapBoxMap() {
   );
 }
 
+
 function fetchWeather() {}
 
 const geolocate = new mapboxgl.GeolocateControl({
@@ -60,8 +61,6 @@ map.addControl(geolocate);
 geolocate.on("geolocate", () => {
   console.log("A geolocate event has occurred.");
 });
-
-
 
 
 
