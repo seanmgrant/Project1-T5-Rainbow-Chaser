@@ -1,5 +1,5 @@
 body {
-    background-image: url("https://i.pinimg.com/564x/a5/b6/02/a5b602fc9befcc14a51ccdd2f64ce062.jpg");
+    background-image: url("");
     
     padding: 10%;
     margin: 10%;
@@ -56,5 +56,6 @@ h1 {
         filter: hue-rotate(360deg);
     }
 }
+
 
 
