@@ -1,28 +1,58 @@
 body {
-    background-image: url("https://i.pinimg.com/564x/a5/b6/02/a5b602fc9befcc14a51ccdd2f64ce062.jpg");
-    
-    padding: 10%;
-    margin: 10%;
-    border: solid 10% red;
+    background-color: #009FB7 ;
+    align-items: center;
+    display: flex;
+    flex-direction: column;   
 }
 
 h1 {
     font: 'Nabla';
     font-family: 'Nabla', 'cursive';
-    size: 20rem;
+    size: 20rem;    
+}
+
+.title {
+    border: 2px solid black;
+    border-radius: 1rem;
+    width: 30rem;
+    text-align: center;
+    backdrop-filter: blur(10px);
+    margin-bottom: 2rem;
+    margin-right: auto;
+    margin-left: auto;  
+}
+
+.centerImage {    
+    height: 50rem;
+    width: auto;
+    display: flex;
+    justify-content: center;
+    border-radius: 10px;    
     
+}
+
+#weatherImage {
+    border: 15px solid #F1FAEE;
+    border-radius: 2rem;
+    height: 100%;
+    width: 99%;
+    margin-bottom: 5rem;
+    box-shadow: 10px 10px 5px black;
+}
+
+.buttonContainer {       
+    align-items: center;
 }
 
 #rainbowBtn {
     align-items: bottom;
     border-radius: 20%;
     height: 4rem;
-    width: 4rem;        
-    
-    position: absolute;
+    width: 4rem;     
+    margin-top: 5rem;      
     bottom: 3%;
     left: 5%;
-    transform: scaleX(-1);        
+    transform: scaleX(-1);            
 }
 
 #rainbowBtn:hover {    
@@ -32,14 +62,6 @@ h1 {
     animation: animate 1.5s linear infinite;
 }
 
-#weatherImage {
-    height: 300px;
-    width: 80%;
-    margin-right: auto;
-    margin-left: auto;
-    display: none;
-}
-
 
 
 #buttonContainer {
@@ -47,8 +69,7 @@ h1 {
     align-items: center;
     align-content: center;
     display: table-cell;
-    /* vertical-align: bottom; */
-
+    vertical-align: bottom;
 }
 
 @keyframes animate {
