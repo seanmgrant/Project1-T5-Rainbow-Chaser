@@ -97,5 +97,3 @@ function tweetSong(){
 		location.href = "index.html";
 	}
 
-
-	
