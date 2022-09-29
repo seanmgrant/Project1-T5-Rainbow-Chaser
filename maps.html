@@ -52,15 +52,15 @@ showUserHeading: true
 })
 );
 
-var marker = new mapboxgl.Marker();
-
-function add_marker (event) {
-  var coordinates = event.lngLat;
-  console.log('Lng:', coordinates.lng, 'Lat:', coordinates.lat);
-  marker.setLngLat(coordinates).addTo(map);
-}
-
-map.on('click', add_marker);
+map.on('style.load', function() {
+  map.on('click', function(e) {
+    var coordinates = e.lngLat;
+    new mapboxgl.Popup()
+      .setLngLat(coordinates)
+      .setHTML('<a href="weatherMusic.html">🌈🌈🌈🌈🌈🌈🌈🌈🌈🌈<a/> <br/>' + coordinates)
+      .addTo(map);
+  });
+});
 
 </script>
 
