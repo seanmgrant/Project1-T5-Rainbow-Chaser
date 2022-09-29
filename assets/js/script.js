@@ -65,12 +65,3 @@ geolocate.on("geolocate", () => {
 
 
 
-
-
-
-
-
-
-
-
-
