@@ -53,11 +53,11 @@ function chooseImage() {
 
 }
 
-  positionOptions: {
-    enableHighAccuracy: true,
-  },
-  trackUserLocation: true,
-});
+//   positionOptions: {
+//     enableHighAccuracy: true,
+//   },
+//   trackUserLocation: true,
+// });
 // Add the control to the map.
 map.addControl(geolocate);
 // Set an event listener that fires
