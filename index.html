@@ -1,13 +1,17 @@
-<!DOCTYPE html>
-<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <link rel="stylesheet" href="./assets/css/style.css">
+
+
+<!-- google api font -->
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nabla&display=swap" rel="stylesheet">
+
 
     <!-- second google font here -->
     
@@ -15,14 +19,21 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
 
+    <!-- bulma style sheet -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <!-- css style sheet -->
+
+
     <link rel="stylesheet" href="./assets/css/style.css">
-    <title>Document</title>
 
 </head>
 <body >
     <section class="content" >
         <div class="title">
+            <div class="tooltip">
             <h1>Rainbow Chaser!</h1>
+                <span class="tooltiptext">A rainbow tracking app. Keep track of rainbows in your area, while finding and pinning them.</span>
+            </div>
         </div>
         <div class="centerImage">
             <img id="weatherImage" src="assets/images/double-rainbow-mountains.jpeg">
@@ -32,9 +43,12 @@
 
         </div>
         <div class="buttonContainer">
-            <input type="image" id="rainbowBtn" src="https://emojigraph.org/media/microsoft/rainbow_1f308.png">
+            <a href="maps.html"><input type="image" id="rainbowBtn" src="https://emojigraph.org/media/microsoft/rainbow_1f308.png">
+            </a> 
+                
             
         </div>
+
         <div class="text">
             <h2 style="--i:0.5"><span> chase the rainbow</span><span> chase the rainbow</span><span> chase the rainbow</span>
                 <span> chase the rainbow</span><span> chase the rainbow</span><span> chase the rainbow</span>
@@ -76,11 +90,28 @@
 
         
 
-        <script src="assets/js/script.js"> </script>
+       
 
     </section>
     
        
     
 </body>
+
+        
+
+
+
+        
+
+
+        <script src="./assets/js/script.js"> </script>
+       
+
+
+
+
+    </section>
+  </body>
+
 </html>
