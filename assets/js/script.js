@@ -12,8 +12,6 @@ const rainy = "raining-grass.jpeg";
 
 
 mainButton.addEventListener("click", () => {
-  alert("This button works!!");
-  console.log("this button works");
 
 });
 
