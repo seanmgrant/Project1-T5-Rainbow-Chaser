@@ -16,7 +16,7 @@ mainButton.addEventListener("click", () => {
 
 });
 
-
+console.log(latLong);
 
 
 
