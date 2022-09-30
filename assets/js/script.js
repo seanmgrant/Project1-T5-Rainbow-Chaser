@@ -10,6 +10,13 @@ const rainy = "raining-grass.jpeg";
 // const snow = 
 // const tornado = 
 
+// the code here is for the backgrounda animation
+const position = document.documentElement;
+
+position.addEventListener("mousemove", (event) => {
+        position.style.setProperty('--x', event.clientX + 'px');
+    });
+
 
 mainButton.addEventListener("click", () => {
   alert("This button works!!");
@@ -68,9 +75,4 @@ function chooseImage() {
 
 }
 
-// the code here is for the backgrounda animation
-const position = document.documentElement;
 
-position.addEventListener("mousemove", (event) => {
-        position.style.setProperty('--x', event.clientX + 'px');
-    });
