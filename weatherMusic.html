@@ -27,11 +27,11 @@
 		  <div class="column">
 			<h3>RAINBOW SONG GENERATOR</h3><br>
 		  </div>
-		  <div class="column">
-			<div class="column" id="songImage"></div>
-			<div class="column">
-			  <p id="song"></p>
-			  <p id="artist"></p>
+		  <div id="container">
+			<button id="getRandomSong">RANDOMIZE</button>
+			<h2 id="randomSong"></h2>
+			<ul id="listOfSongs"></ul>
+		  </div>
 			  <button class="button" onclick="newRandomSong()"><span>RKS SONG</span></button>
 			  <br>
 			   <button class="button tweet" onclick="tweetSong()"><span>TWEET abt it <i class="fas fa-twitter"></i></span></button>
@@ -39,16 +39,7 @@
 		  </div>
 		</div>
 
-		<!-- random rainbow image generator -->
-		<div id= "imgContainer">
-			<div id= "innerImgContainer">
-			<img id="randomRainbowImg"/>
-			</div>
-			<div id="imgBtnContainer">
-				<button id="imgButtonEl" onclick="randomRainbowImg()">Click for rainbow image generator<i class="fas fa-random"></i></button>
-			</div>
-		</div>
-		
+
 		
 
 
