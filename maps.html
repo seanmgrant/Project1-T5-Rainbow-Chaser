@@ -58,7 +58,7 @@ map.on('style.load', function() {
     localStorage.setItem("latLong", JSON.stringify(coordinates))
     new mapboxgl.Popup()
       .setLngLat(coordinates)
-      .setHTML('<a href="weatherMusic.html">🌈🌈🌈🌈🌈🌈🌈🌈🌈🌈<a/> <br/>' + coordinates)
+      .setHTML('<a href="weatherMusic.html">🌈🌈<button type="button">You Found a Rainbow!</button>🌈🌈<a/> <br/>' + coordinates)
       .addTo(map);
   });
 });

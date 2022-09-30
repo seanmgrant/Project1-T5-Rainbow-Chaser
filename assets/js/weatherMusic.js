@@ -6,7 +6,7 @@ var APISong = "https://api.genius.com/songs/";
 var artistID = "395176";
 var maxSong= 2471960; 
 //Max song is 489579 for a fairly safe number. But 2 million songs 
-
+console.log(coordinates);
 
 /**
  * Returns a random integer between min (inclusive) and max (inclusive)

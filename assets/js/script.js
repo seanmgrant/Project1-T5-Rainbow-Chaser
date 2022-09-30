@@ -10,7 +10,7 @@ const rainy = "raining-grass.jpeg";
 // const snow = 
 // const tornado = 
 
-
+console.log(latLong);
 
 
 // // this will choose and return an image based on current weather conditions which will be passed as argument to function
