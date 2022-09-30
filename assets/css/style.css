@@ -132,7 +132,7 @@ section {
     pointer-events: none;
     line-height: .25em;
     white-space: nowrap;
-    text-shadow: calc(var(--x)) 100px 0 var(--darkBlue);
+    /* text-shadow: calc(var(--x)) 100px 0 var(--darkBlue); */
     transform: translateX(calc(0% - var(--x)* var(--i)));
 }
 .text h2 span {
