@@ -7,7 +7,8 @@ const rainy = "raining-grass.jpeg";
 // const cloudy = 
 // const sunny = 
 // const thunder = 
-// const snow = 
+
+// const snow =  out  
 // const tornado = 
 
 
