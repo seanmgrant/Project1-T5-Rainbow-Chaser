@@ -1,5 +1,12 @@
+:root {
+    --darkBlue: #002352;
+    --lightBlue: #009FB7
+
+}
+
 body {
-    background-color: #009FB7 ;
+    
+    background-color: var(--lightBlue) ;
     align-items: center;
     display: flex;
     flex-direction: column;   
@@ -8,11 +15,18 @@ body {
 h1 {
     font: 'Nabla';
     font-family: 'Nabla', 'cursive';
-    size: 20rem;    
+    size: 20rem; 
+    z-index: 999;   
+    
+}
+
+section {
+    display: block;
 }
 
 .title {
-    border: 2px solid black;
+    z-index: 999;
+    border: 2px solid var(--darkBlue);
     border-radius: 1rem;
     width: 30rem;
     text-align: center;
@@ -20,15 +34,17 @@ h1 {
     margin-bottom: 2rem;
     margin-right: auto;
     margin-left: auto;  
+    box-shadow: 10px 10px 5px #002352;
+    margin-bottom: -30px;
 }
 
-.centerImage {    
+.centerImage {        
+    z-index: 2;    
     height: 50rem;
     width: auto;
     display: flex;
     justify-content: center;
-    border-radius: 10px;    
-    
+    border-radius: 10px;        
 }
 
 #weatherImage {
@@ -37,7 +53,7 @@ h1 {
     height: 100%;
     width: 99%;
     margin-bottom: 5rem;
-    box-shadow: 10px 10px 5px black;
+    box-shadow: 10px 10px 5px var(--darkBlue);
 }
 
 .buttonContainer {       
@@ -78,6 +94,58 @@ h1 {
     }
 }
 
+
+
+/* animation for background starts here */
+
+
+.content .text{
+    position: fixed;
+    top: 0;
+    z-index: -1;
+    font-family: 'Pacifico', cursive;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    width: 100vh;
+    height: 100vh;   
+}
+
+.text {
+    position: relative;
+    transform: skewY(345deg) translateY(-200px);
+    animation:  animateColor 5s linear infinite;
+}
+@keyframes animateColor {
+    0% {
+        filter: hue-rotate(0deg);
+    }
+    100% {
+        filter: hue-rotate(360deg);
+    }    
+}
+
+.text h2 {
+    position: relative;
+    width: 100%;
+    font-size: 8em;
+    color: white;
+    pointer-events: none;
+    line-height: .25em;
+    white-space: nowrap;
+    text-shadow: calc(var(--x)) 100px 0 var(--darkBlue);
+    transform: translateX(calc(0% - var(--x)* var(--i)));
+}
+.text h2 span {
+    color: #0f0;
+    margin: 0 10px;
+}
+.text h2 span:nth-child(even) {
+    color: transparent;
+    -webkit-text-stroke: 2px #fff;
+}
+
+
 .tooltip {
     position: relative;
     display: inline-block;
@@ -103,3 +171,4 @@ h1 {
   .tooltip:hover .tooltiptext {
     visibility: visible;
   }
+
