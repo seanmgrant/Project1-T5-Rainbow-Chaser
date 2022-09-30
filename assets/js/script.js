@@ -11,12 +11,6 @@ const rainy = "raining-grass.jpeg";
 // const tornado = 
 
 
-mainButton.addEventListener("click", () => {
-  alert("This button works!!");
-  console.log("this button works");
-
-});
-
 
 
 // // this will choose and return an image based on current weather conditions which will be passed as argument to function
