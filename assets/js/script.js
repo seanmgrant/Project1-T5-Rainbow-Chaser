@@ -3,33 +3,17 @@
 var apiKeyMapBox =
   "pk.eyJ1IjoibW1vY2t1czE1IiwiYSI6ImNsOGc2Nnh4cTBlbTUzdm5obHNtMnNuamMifQ.AZXXr5kGKaQPJ9wbx6oIWQ";
 const mainButton = document.querySelector("#rainbowBtn");
-const rainy = "raining-grass.jpeg";
-// const cloudy = 
-// const sunny = 
-// const thunder = 
-// const snow = 
-// const tornado = 
 
 
 
 
-// // this will choose and return an image based on current weather conditions which will be passed as argument to function
-// function currentWeather(display) {
-//     switch {
-//         case 'rainy':
+mainButton.addEventListener("click", () => {
 
-//         case 'cloudy'			
+});
 
-//         case 'sunny':
 
-//         case 'windy':
 
-//         case 'lightning':
 
-//         default:
-
-//     }
-// }
 
 function fetchMapBoxMap() {
   fetch(`mapbox://styles/mmockus15/cl8g85w5a000315pmfkxv1wab`).then(
