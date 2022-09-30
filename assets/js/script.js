@@ -6,6 +6,7 @@ const mainButton = document.querySelector("#rainbowBtn");
 
 
 
+
 mainButton.addEventListener("click", () => {
 
 });
