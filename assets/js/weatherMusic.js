@@ -51,8 +51,8 @@ randomButton.addEventListener("click", getRandomButton);
 
 function tweetSong(){
   console.log(tweetSong);
-	window.open('https://twitter.com/intent/tweet?hashtags=rainbowchaser&text=Found a rainbow today! This cool new app called Rainbow Chaser let me drop a pin on my current location where I saw a rainbow! I was provided with this awesome song as a prize! "'+randomSong['title']+'" by '+randomSong['artist_names']);
-}
+	window.open('https://twitter.com/intent/tweet?hashtags=rainbowchaser&text=Found a rainbow today! This cool new app called Rainbow Chaser let me drop a pin on my current location where I saw a rainbow! I was provided with an awesome song as a prize! Checkout the app at "url goes here"! "'
+)};
 
 
 
