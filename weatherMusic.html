@@ -11,6 +11,8 @@
     href="https://fonts.googleapis.com/css2?family=Nabla&display=swap"
     rel="stylesheet"
     />
+	<!-- rainbow cursor -->
+	<style type="text/css">body { cursor: url('data:image/x-icon;base64,AAACAAEAICAQAAAAAADoAgAAFgAAACgAAAAgAAAAQAAAAAEABAAAAAAAAAIAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAP/uAB7/AADuAP8AAAD/AP/IAAAAw/8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADUAAAAAAAAAAAAAAAAAAAA1AAAAAAAAAAAAAAAAAAAEMAAAAAAAAAAAAAAAAAAABDAAAAAAAAAAAAAAAAAAAGQAAAAAAAAAAAAAAAAEAABkAAAAAAAAAAAAAAAABDABYAAAAAAAAAAAAAAAAAQ1AWAAAAAAAAAAAAAAAAAENSFgAAAAAAAAAAAAAAAABDUhZDUAAAAAAAAAAAAAAAQ1IWQwAAAAAAAAAAAAAAAENSFkAAAAAAAAAAAAAAAABDUhYAAAAAAAAAAAAAAAAAQ1IQAAAAAAAAAAAAAAAAAENSAAAAAAAAAAAAAAAAAABDUAAAAAAAAAAAAAAAAAAAQwAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD///////////////////////////////////////////////////////////8////+H////h////w///98P///OH///xh///8A////AP///wAP//8AH///AD///wB///8A////Af///wP///8H////D////x////8/////f////w=='), auto; }</style>
 	<!-- music style sheet -->
 	<link href="https://fonts.googleapis.com/css?family=Hammersmith+One" rel="stylesheet">
 	<!-- bulma style sheet -->
@@ -22,14 +24,14 @@
 
 
 <body>
-		<div class="columns" id="columns">
+		<div class="columns m-0" id="columns">
 		  <button class="rainbowTitle column" id="rainbowTitleBtn">RAINBOW CHASER</button>
 		  <div class="column">
 			<h3>RAINBOW SONG GENERATOR</h3><br>
 		  </div>
 		  <div class="row text-center">
 			<div class="col-xs-6 text-right" id="songImage"></div>
-			<div class="col-xs-6 text-left">
+			<div class="col-xs-6 text-left is-uppercase">
 			  <p id="randomSong"></p>
 			  <p id="artist"></p>
 			</div>
@@ -38,9 +40,6 @@
 			<button class="button tweet" onclick="tweetSong()"><span>TWEET abt it <i class="fas fa-twitter"></i></span></button>
 		</div>
 	</div>
-
-
-<!-- <button class="button" onclick="newRandomSong()"><span>RKS SONG</span></button> -->
 
 		
 		<script type="text/javascript" 
