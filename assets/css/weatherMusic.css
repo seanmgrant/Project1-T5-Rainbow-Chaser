@@ -99,19 +99,19 @@ body {
   }
 
   /* NOT WORKING NEEDS TO BE WORKED ON MORE */
-  #imgButtonEl {
+  /* #imgButtonEl {
 	background-color: #ff00e0;
 	font-size: medium;
 
-  }
+  } */
 
-  #imgButtonEl:hover span:after {
+  /* #imgButtonEl:hover span:after {
 	opacity: 1;
 	right: 0;
 	border: solid 3px #E3B505;  
     cursor: pointer; 
     background: linear-gradient(to right, #14ffe9, #ffeb3b, #ff00e0);
     animation: animate 1.5s linear infinite;
-}
+} */
 
 
