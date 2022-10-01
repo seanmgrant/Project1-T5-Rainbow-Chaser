@@ -31,6 +31,8 @@ fetch(url)
   })
   .catch((err) => console.error(err));
 
+
+  
 function getRandomButton() {
   const song = songsArray[Math.floor(Math.random() * songsArray.length)];
   randomSong.textContent = song.title;
