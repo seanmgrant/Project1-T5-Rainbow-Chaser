@@ -52,16 +52,19 @@ showUserHeading: true
 })
 );
 
+
 map.on('style.load', function() {
   map.on('click', function(e) {
     var coordinates = e.lngLat;
-    localStorage.setItem("latLong", JSON.stringify(coordinates))
+    localStorage.setItem("latLong", JSON.stringify(coordinates));
+    // getSearchHistory();
     new mapboxgl.Popup()
       .setLngLat(coordinates)
       .setHTML('<a href="weatherMusic.html">🌈🌈<button type="button">You Found a Rainbow!</button>🌈🌈<a/> <br/>' + coordinates)
       .addTo(map);
   });
 });
+
 
 </script>
 

@@ -53,6 +53,7 @@ function tweetSong(){
 
 
 
+
 // rainbow button returns to homepage
 document.getElementById("rainbowTitleBtn").onclick = function () {
 	location.href = "index.html";
