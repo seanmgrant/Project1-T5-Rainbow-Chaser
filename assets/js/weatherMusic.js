@@ -57,3 +57,11 @@ function tweetSong(){
 document.getElementById("rainbowTitleBtn").onclick = function () {
 	location.href = "index.html";
 }
+
+
+let latLong = window.localStorage.getItem("latLong");
+		console.log(JSON.parse(latLong));
+
+document.getElementById("latLong").innerHTMl = 
+document.getElementById("p").textContent += latLong;
+    
