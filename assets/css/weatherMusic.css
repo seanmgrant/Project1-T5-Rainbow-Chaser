@@ -32,7 +32,7 @@ body {
 
   .rainbowTitle:hover {    
     border: solid 3px #E3B505;  
-	cursor: url('/YOUR_PATH/cursor.cur'), auto; 
+    cursor: pointer; 
     background: linear-gradient(to right, #14ffe9, #ffeb3b, #ff00e0);
     animation: animate 1.5s linear infinite;
 }
