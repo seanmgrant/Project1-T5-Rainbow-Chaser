@@ -40,8 +40,7 @@ function getRandomButton() {
   const artist_names = songsArray[Math.floor(Math.random() * songsArray.length)];
   artist.textContent = song.artist_names;
 
-  const header_image_url = songsArray[Math.floor(Math.random() * imageArray.length)];
-  image.innerHTML = song.header_image_url
+  document.getElementById("songImage").innerHTML = "<img src=\""+song['header_image_url']+"\"alt=\"Some Awesome Album Art\" style=\"width:200px;height:200px;\">";
 
   console.log(song.title);
   console.log(song.artist_names);
@@ -52,7 +51,7 @@ randomButton.addEventListener("click", getRandomButton);
 
 function tweetSong(){
   console.log(tweetSong);
-	window.open('https://twitter.com/intent/tweet?hashtags=rainbowchaser&text=Found a rainbow today! This cool new app called Rainbow Chaser let me drop a pin on the location of the rainbow, and provided me with this cool song as a prize! "'+randomSong['title']+'" by '+randomSong['artist_names']);
+	window.open('https://twitter.com/intent/tweet?hashtags=rainbowchaser&text=Found a rainbow today! This cool new app called Rainbow Chaser let me drop a pin on my current location where I saw a rainbow! I was provided with this awesome song as a prize! "'+randomSong['title']+'" by '+randomSong['artist_names']);
 }
 
 
