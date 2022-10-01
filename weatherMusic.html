@@ -8,8 +8,8 @@
 	<link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Nabla&display=swap"
-      rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Nabla&display=swap"
+    rel="stylesheet"
     />
 	<!-- music style sheet -->
 	<link href="https://fonts.googleapis.com/css?family=Hammersmith+One" rel="stylesheet">
@@ -17,7 +17,7 @@
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
 	<!-- css style sheet -->
 <link rel="stylesheet" href="./assets/css/weatherMusic.css">
-	<title>Current Weather/Music</title>
+	<title>Rainbow Prize!</title>
 </head>
 
 
@@ -27,18 +27,20 @@
 		  <div class="column">
 			<h3>RAINBOW SONG GENERATOR</h3><br>
 		  </div>
-		  <div id="container">
-			<button id="getRandomSong">RANDOMIZE</button>
-			<h2 id="randomSong"></h2>
-			<ul id="listOfSongs"></ul>
-		  </div>
-			  <button class="button" onclick="newRandomSong()"><span>RKS SONG</span></button>
-			  <br>
-			   <button class="button tweet" onclick="tweetSong()"><span>TWEET abt it <i class="fas fa-twitter"></i></span></button>
+		  <div class="row text-center">
+			<div class="col-xs-6 text-right" id="songImage"></div>
+			<div class="col-xs-6 text-left">
+			  <p id="randomSong"></p>
+			  <p id="artist"></p>
 			</div>
-		  </div>
+			<button class="button" id="getRandomSong">RKS SONG</button>
+			<br>
+			<button class="button tweet" onclick="tweetSong()"><span>TWEET abt it <i class="fas fa-twitter"></i></span></button>
 		</div>
+	</div>
 
+
+<!-- <button class="button" onclick="newRandomSong()"><span>RKS SONG</span></button> -->
 
 		
 		<script type="text/javascript" 
