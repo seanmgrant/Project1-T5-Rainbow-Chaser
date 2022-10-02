@@ -1,23 +1,18 @@
 const container = document.getElementById("container");
 const randomButton = document.getElementById("getRandomSong");
 const randomSong = document.getElementById("randomSong");
-const artist = document.getElementById("artist")
-const image = document.getElementById("songImage");
+const listOfSongs = document.getElementById("listOfSongs");
 
-const accessToken = "UmPBuhj-uO4Mca7DY6BBiSWDGEBQWP78u_bl1Ukzmd1NAra-awRwQcL8Y5prJt5F";
+const accessToken = "hW3Bng-wVgH972H-hNjQzRyaon_kS2KVssBYMelr6qYupT41QiXmtTJSh1iFZGD-";
 const url = `https://api.genius.com/artists/395176/songs?per_page=50&access_token=${accessToken}`;
 let songsArray = [];
-let imageArray = [];
 
 function buildSongUI(songsArray) {
   songsArray.forEach(function (song) {
     console.log(song.title);
-    const songP = document.createElement("p");
-    p.textContent = song.title;
-    randomSong.appendChild(p);
-    // const artistP = document.createElement("p");
-    // p.textContent = song.artist;
-    // artist.appendChild(p);
+    const li = document.createElement("li");
+    li.textContent = song.title;
+    listOfSongs.appendChild(li);
   });
 }
 
@@ -27,31 +22,22 @@ fetch(url)
   })
   .then((response) => {
     songsArray = response.response.songs;
-    // buildSongUI(songsArray);
+    buildSongUI(songsArray);
   })
   .catch((err) => console.error(err));
 
-
-  
 function getRandomButton() {
   const song = songsArray[Math.floor(Math.random() * songsArray.length)];
   randomSong.textContent = song.title;
 
-  const artist_names = songsArray[Math.floor(Math.random() * songsArray.length)];
-  artist.textContent = song.artist_names;
-
-  document.getElementById("songImage").innerHTML = "<img src=\""+song['header_image_url']+"\"alt=\"Some Awesome Album Art\" style=\"width:200px;height:200px;\">";
-
   console.log(song.title);
-  console.log(song.artist_names);
-  console.log(song.header_image_url)
 }
 
 randomButton.addEventListener("click", getRandomButton);
 
 function tweetSong(){
-  console.log(tweetSong);
-	window.open('https://twitter.com/intent/tweet?hashtags=rainbowchaser&text=Found a rainbow today! This cool new app called Rainbow Chaser let me drop a pin on my current location where I saw a rainbow! I was provided with this awesome song as a prize! "'+randomSong['title']+'" by '+randomSong['artist_names']);
+	window.open('https://twitter.com/intent/tweet?hashtags=songs&text=Found a rainbow today! This cool new app called Rainbow Chaser let me drop a pin on the location of the rainbow, and provided me with this cool song as a prize! "'+song['title']+'" by '+song['primary_artist']['name']);
+	
 }
 
 
@@ -72,3 +58,11 @@ function tweetSong(){
 document.getElementById("rainbowTitleBtn").onclick = function () {
 	location.href = "index.html";
 }
+
+
+let latLong = window.localStorage.getItem("latLong");
+		console.log(JSON.parse(latLong));
+
+document.getElementById("latLong").innerHTMl = 
+document.getElementById("p").textContent += latLong;
+    
