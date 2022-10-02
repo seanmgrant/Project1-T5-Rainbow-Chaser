@@ -5,7 +5,7 @@ A tracker app made fun! Keep track of rainbows in your area, while finding and p
 
 
 
-Acceptance Criteria              
+## Acceptance Criteria              
 GIVEN a fun geo weather app that allows users to find rainbows locally                   
 WHEN I hover my mouse over the rainbow on the homepage.                   
 THEN I see details of how to use the Rainbow Chaser App                   
@@ -21,10 +21,20 @@ WHEN I see a rainbow
 THEN I can add a photo and pin to my local map to share location details of said rainbow               
 
 
-## Installation
-
 
 ## Usage
+Click on rainbow button to start marking the rainobows you see.
+<img width="1748" alt="Screen Shot 2022-10-02 at 3 36 46 PM" src="https://user-images.githubusercontent.com/104331199/193477485-44c1b004-bde7-4d83-a2b9-aa10e6a22067.png">
+
+Once on the world map click the gio loction button in top right corner to access you current loction.
+<img width="1889" alt="Screen Shot 2022-10-02 at 3 37 26 PM" src="https://user-images.githubusercontent.com/104331199/193477494-73af9c02-3b77-4ab1-b2aa-d884fcfe3248.png">
+
+
+click the loction where you see the rainbow. It will take you to the music page.
+<img width="1403" alt="Screen Shot 2022-10-02 at 3 38 06 PM" src="https://user-images.githubusercontent.com/104331199/193477503-9b4140a2-fa5f-4bf0-af55-0300fc4b64f6.png">
+
+Click the button to generate a random Rainbow Kitten Suprise song along with the latitude and longitude of the rainbow you found. You can then share this info on twitter.
+<img width="930" alt="Screen Shot 2022-10-02 at 3 38 24 PM" src="https://user-images.githubusercontent.com/104331199/193477506-e36f4b32-acf8-4cd5-9e19-0d59180a1f72.png">
 
 
 
