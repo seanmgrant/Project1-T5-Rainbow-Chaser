@@ -17,13 +17,57 @@ body {
 	flex-direction: column;
 }
 
+.column{
+	padding: 0;
+	flex-grow: 0;
+}
+
+.columns{
+		height: 100%;
+		width: 100%;
+		left:0;
+		right: 0;
+		top: 0;
+		bottom: 0;
+		position: absolute;
+	  background: linear-gradient(124deg, #ff2400, #e81d1d, #e8b71d, #e3e81d, #1de840, #1ddde8, #2b1de8, #dd00f3, #dd00f3);
+	  background-size: 1800% 1800%;
+	  
+	  -webkit-animation: rainbow 18s ease infinite;
+	  -z-animation: rainbow 18s ease infinite;
+	  -o-animation: rainbow 18s ease infinite;
+		animation: rainbow 18s ease infinite;}
+	  
+	  @-webkit-keyframes rainbow {
+		  0%{background-position:0% 82%}
+		  50%{background-position:100% 19%}
+		  100%{background-position:0% 82%}
+	  }
+	  @-moz-keyframes rainbow {
+		  0%{background-position:0% 82%}
+		  50%{background-position:100% 19%}
+		  100%{background-position:0% 82%}
+	  }
+	  @-o-keyframes rainbow {
+		  0%{background-position:0% 82%}
+		  50%{background-position:100% 19%}
+		  100%{background-position:0% 82%}
+	  }
+	  @keyframes rainbow { 
+		  0%{background-position:0% 82%}
+		  50%{background-position:100% 19%}
+		  100%{background-position:0% 82%}
+	  }
+
+
   .rainbowTitle {
 	display: flex;
 	font-size: 200%;
 	background-color: rgb(54, 8, 54);
 	border: solid 5px purple;
-	text-shadow: 2px 2px RGB(255, 255, 255);
+	/* text-shadow: 2px 2px RGB(255, 255, 255); */
 	font-family: 'Nabla', 'cursive';
+	height: 300px;
   }
 
   .rainbowTitle:hover {    
@@ -38,6 +82,7 @@ body {
   }
   p{
 	font-size: 110%;
+
   }
   
   a:link {
@@ -93,25 +138,5 @@ body {
   }
 
 
-  #imgContainer {
-	border: 2px solid black;
-	height: 380px;
-  }
-
-  /* NOT WORKING NEEDS TO BE WORKED ON MORE */
-  #imgButtonEl {
-	background-color: #ff00e0;
-	font-size: medium;
-
-  }
-
-  #imgButtonEl:hover span:after {
-	opacity: 1;
-	right: 0;
-	border: solid 3px #E3B505;  
-    cursor: pointer; 
-    background: linear-gradient(to right, #14ffe9, #ffeb3b, #ff00e0);
-    animation: animate 1.5s linear infinite;
-}
-
+  
 
