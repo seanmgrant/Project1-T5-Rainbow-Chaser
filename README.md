@@ -51,7 +51,7 @@ Bryce Dooly  https://github.com/JBDooley
 
 ## Features
 Dynamic HTML and CSS enhanced by JavaScript. 
-API used: Mapbox & Genius 
+API: Mapbox & Genius 
 
 
 
