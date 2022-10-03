@@ -1,7 +1,6 @@
 // maps geoLocate JavaScript
 
-var apiKeyMapBox =
-  "pk.eyJ1IjoibW1vY2t1czE1IiwiYSI6ImNsOGc2Nnh4cTBlbTUzdm5obHNtMnNuamMifQ.AZXXr5kGKaQPJ9wbx6oIWQ";
+var apiKeyMapBox = "pk.eyJ1IjoibW1vY2t1czE1IiwiYSI6ImNsOGc2Nnh4cTBlbTUzdm5obHNtMnNuamMifQ.AZXXr5kGKaQPJ9wbx6oIWQ";
 const mainButton = document.querySelector("#rainbowBtn");
 
 // the code here is for the backgrounda animation

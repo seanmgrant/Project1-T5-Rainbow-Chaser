@@ -46,7 +46,7 @@ section {
     width: auto;
     display: flex;
     justify-content: center;
-    border-radius: 10px;        
+    border-radius: 10px;       
 }
 
 #weatherImage {
