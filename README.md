@@ -36,7 +36,8 @@ click the loction where you see the rainbow. It will take you to the music page.
 <img width="1403" alt="Screen Shot 2022-10-02 at 3 38 06 PM" src="https://user-images.githubusercontent.com/104331199/193477503-9b4140a2-fa5f-4bf0-af55-0300fc4b64f6.png">
 
 Click the button to generate a random Rainbow Kitten Suprise song along with the latitude and longitude of the rainbow you found. You can then share this info on twitter.
-<img width="930" alt="Screen Shot 2022-10-02 at 3 38 24 PM" src="https://user-images.githubusercontent.com/104331199/193477506-e36f4b32-acf8-4cd5-9e19-0d59180a1f72.png">
+<img width="985" alt="Screen Shot 2022-10-02 at 8 40 41 PM" src="https://user-images.githubusercontent.com/104331199/193492395-279811c5-4b61-4894-add8-4ab08cfa0020.png">
+
 
 
 
