@@ -213,4 +213,8 @@ section {
         height:36%;
       }
     
+      .tooltip:hover .tooltiptext {
+        visibility: visible;
+        margin-left: -100%;
+    }
   }
