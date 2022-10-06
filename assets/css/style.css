@@ -189,3 +189,32 @@ section {
     visibility: visible;
   }
 
+
+
+
+  @media screen and (max-width: 850px) {
+    #rainbowBtn {
+     padding-right: 200px;
+    }
+
+      #weatherImage {
+        max-width:50%;
+        height:40%;
+        /* padding-top: 90%; */
+      }
+
+      .title {
+        max-width:50%;
+        height:6%;
+      }
+
+      h1 {
+        max-width:100%;
+        height:36%;
+      }
+    
+      .tooltip:hover .tooltiptext {
+        visibility: visible;
+        margin-left: -100%;
+    }
+  }

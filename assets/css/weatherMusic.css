@@ -148,5 +148,8 @@ body {
 	} 
 
 
-  
-
+	@media screen and (max-width: 850px) {
+		p {
+		  font-size: 82%;
+		}
+	  }
